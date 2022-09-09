@@ -90,3 +90,12 @@ a {
 .projects-list ul {
     width: 600px;
 }
+
+.ring-list ul {
+    width: 500px;
+    padding: 0;
+}
+
+.ring-list ul li {
+    display: inline-block;
+}
