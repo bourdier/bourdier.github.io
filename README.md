@@ -1,1 +1,1 @@
-# [trrb.xyz](https:/trrb.xyz/)
+# [trrb.xyz](https://trrb.xyz/)
