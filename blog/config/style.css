@@ -90,3 +90,7 @@ a {
 .projects-list ul {
     width: 600px;
 }
+
+.content {
+    text-align: left;
+}
