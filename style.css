@@ -1,5 +1,6 @@
 html {
     background-image: url("img/rain.gif");
+    background-size: 50%;
     background-color: black;
 }
 
