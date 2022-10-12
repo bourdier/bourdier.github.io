@@ -16,6 +16,7 @@ body {
 
 .active {
     font-weight: 400;
+    color: #0e1e4e;
 }
 
 /* profile */
@@ -171,3 +172,91 @@ img {
 .ring-list ul li {
     display: inline-block;
 }
+
+.nav-link-mobile {
+    display: none;
+}
+
+.footer-divider {
+    display: none;
+}
+
+.footer-links-mobile {
+    display: none;
+}
+
+/* media-queries */
+
+@media screen and (max-width: 1000px) {
+    .panels {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center; 
+        max-width: 1000px;
+        min-width: 200px;
+    }
+
+    .right-panel {
+        padding: 0;
+    }
+
+    .right-text, .right-title {
+        padding: 10px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-links-mobile {
+        border-top: 1px solid #0e1e4e;
+        list-style-type: none;
+        justify-content: center;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 32px;
+    }
+
+    .footer-links-mobile a {
+        color: #0e1e4e;
+    }
+
+    .nav-title {
+        display: none;
+    }
+
+    .nav-link-mobile {
+        display: inline-block;
+        list-style-type: none;
+        justify-content: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 38px;
+    }
+  }
