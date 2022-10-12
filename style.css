@@ -158,6 +158,7 @@ img {
     max-height:400px;
     width:auto;
     height:auto;
+    padding:15px;
 }
 
 .ring-list {
@@ -258,5 +259,11 @@ img {
         flex-direction: row;
         gap: 15px;
         font-size: 38px;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        text-align: center;
     }
   }
