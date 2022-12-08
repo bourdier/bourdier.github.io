@@ -4,12 +4,13 @@
     --headline: #FFFFFE;
     --paragraph: #ABD1C6;
     --link: #F9BC60;
-    --link-hover: #ffd9a0;
+    --link-hover: #fdddad;
 }
 
 body {
     background-color: #004643;
     font-family: 'Roboto';
+    overflow: hidden;
     margin: 0;
 }
 
@@ -18,7 +19,18 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    animation: 1.25s slide-up;
 }
+
+@keyframes slide-up {
+    from {
+        margin-top: 100%;
+
+    }
+    to {
+        margin: 0;
+    }
+  }
 
 .profil {
     text-align: center;
@@ -33,11 +45,16 @@ main {
 }
 
 a {
-    color: var(--link)
+    color: var(--link);
+    transition: transform .3s ease-out;
+    transition: all .3s cubic-bezier(.17,.67,.83,.67);
+    display: inline-block;
 }
 
 a:hover {
-    color: var(--link-hover)
+    color: var(--link-hover);
+    transition: all .3s cubic-bezier(.17,.67,.83,.67);
+    transform: translate(0, -5px);
 }
 
 h1 {
